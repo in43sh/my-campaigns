@@ -1,4 +1,12 @@
-﻿.login-body {
+﻿.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.login-body {
     height: 100vh;
 }
 
