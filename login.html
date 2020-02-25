@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <title>Login</title>
+</head>
+<body class="login-body">
+    <div id="loginPage" class="login-content">
+        <div class="colorbar"></div>
+        <div class="login-content__form-wrapper">
+            <img id="img_Logo" class="login-content__logo" src="images/gcn-logo-signin.png?t=2/24/2020 7:08:33 PM" style="border-width:0px;" />
+            
+
+            
+        </div>
+        <div class="login-content__form-wrapper">
+            <div id="username" class="form-group">
+                <label class="label login-content__email-label" for="usernamefield">Email Address:</label>
+                <input name="usernamefield" type="text" id="usernamefield" class="input" />
+                <span id="RequiredFieldValidator9" style="color:Red;font-size:small;visibility:hidden;">This field Required.</span>
+            </div>
+            <div id="password" class="form-group">
+                <label class="label" for="passwordfield">Password:</label>
+                <input name="passwordfield" type="password" id="passwordfield" class="input" type="password" name="password" />
+                <span id="RequiredFieldValidator1" style="color:Red;font-size:small;visibility:hidden;">This field Required.</span>
+            </div>
+            <span id="errorLabel" class="login-content__error-label"></span>
+            <div class="login-content__actions-container">
+                <span class="login-content__keep-logged-text" style="font-size:Small;"><input id="Chk_SaveLogin" type="checkbox" name="Chk_SaveLogin" checked="checked" /><label for="Chk_SaveLogin">Remember me</label></span>
+                <p><a class="bold login-content__forgot-password-link" href="lostPassword.aspx">Forgot password?</a></p>
+            </div>
+            <input type="submit" name="Button1" value="Login" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;Button1&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="Button1" class="submit-btn login-content__login-button" />
+            <div class="login-content__signup-container">
+                <span class="bold">Don't have an account?</span>                    
+                <a class="bold login-content__signup-link" href="invite.aspx">Sign up!</a>
+            </div>
+        </div>
+        <div>
+            <input type="hidden" name="hashValue" id="hashValue" />
+            <input type="hidden" name="merchantID" id="merchantID" />
+        </div>
+        <div id="cashierlogin">
+        </div>
+    </div>
+</body>
+</html>
