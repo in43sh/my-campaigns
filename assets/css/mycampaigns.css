@@ -1,0 +1,199 @@
+﻿.my-campaigns__instructions-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.my-campaigns__button-grp {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.my-campaigns__add-merchant-group-btn {
+    margin-left: 1rem;
+}
+
+/* OFFER CARD */.my-campaigns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.my-campaigns__campaign-card {
+    width: 262px;
+    margin-bottom: 1.5rem;
+    position: relative;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 20px 9px #d0d2d691;
+    -moz-box-shadow: 0px 0px 20px 9px #d0d2d691;
+    box-shadow: 0px 0px 20px 9px #d0d2d691;
+}
+
+.campaign-card__campaign-card-header {
+    height: 210px;
+    display: grid;
+    place-items: center;
+    background-color: #E6E7E8;
+}
+
+.campaign-card__number-uses {
+    padding: .2rem .5rem;
+    font-size: 14px;
+    color: #fff;
+    background-color: #84BA40;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 5px;
+}
+
+.campaign-card__message-wrapper {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.campaign-card__message {
+    padding: 1rem;
+    margin: 0;
+}
+
+.campaign-card__message-wrapper-tail {
+    position: absolute;
+    top: 50px;
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+
+    border-left: 60px solid #FFF;
+    z-index: -1;
+}
+
+.campaign-card__campaign-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid #E6E7E8;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.campaign-card__state-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.campaign-card__card-state {
+    width: 75px;
+    padding: .3rem .9rem;
+    border-radius: 18px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.campaign-card__card-state--is-inactive {
+    color: #8A8C8E;
+    background-color: #E6E7E8;
+}
+
+.campaign-card__card-state--is-pending {
+    color: #fff;
+    background-color: #F0AD4E;
+}
+
+.campaign-card__card-state--is-active {
+    color: #fff;
+    background-color: #84BA40;
+}
+
+.campaign-card__card-state-switch {
+    position: relative;
+    -webkit-appearance: none;
+    outline: none;
+    width: 42px;
+    height: 22px;
+    background-color: #fff;
+    border: 1px solid #D9DADC;
+    border-radius: 50px;
+    box-shadow: inset -20px 0 0 0 #fff;
+}
+
+.campaign-card__card-state-switch:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background: transparent;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.campaign-card__card-state-switch:checked {
+    box-shadow: inset 20px 0 0 0 #6E9B34;
+    border-color: #6E9B34;
+}
+
+.campaign-card__card-state-switch:checked:after {
+    left: 15px;
+    box-shadow: -2px 4px 3px rgba(0,0,0,0.05);
+}
+
+.campaign-card__data-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "status type"
+        "name name"
+        "launch-date launch-date";
+    row-gap: .5rem;
+}
+
+.campaign-card__status-wrapper {
+    grid-area: status;
+    display: flex;
+    flex-direction: column;
+}
+
+.campaign-card__type-wrapper {
+    grid-area: type;
+    display: flex;
+    flex-direction: column;
+}
+
+.campaign-card__name-wrapper {
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+}
+
+.campaign-card__launch-wrapper {
+    grid-area: launch-date;
+    display: flex;
+    flex-direction: column;
+}
+
+.campaign-card__data-grid-title {
+    font-size: 10px;
+    color: #CED4DA;
+}
+
+@media only screen and (min-width: 768px) {
+    .my-campaigns__instructions-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

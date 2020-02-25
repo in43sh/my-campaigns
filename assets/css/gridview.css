@@ -1,0 +1,68 @@
+﻿/* TABLE */
+.main-container__table-container {
+    word-wrap: break-word;
+}
+
+/* this makes table responsive on mobile */
+.table-container__table {
+    width: 100%; /* this line has to stay to keep the table responsive on mobile */ /* 18.1rem = 290px */
+    table-layout: fixed;
+    display: inline-block;
+    overflow-x: auto; /* this line makes the table fill the screen on the mobile and enables the scrolling */
+    border: none;
+    font-size: 14px;
+    text-align: left;
+}
+
+.table-container__table tbody {
+    border: 1px solid #C8C8C8;
+}
+
+.table__table-row {
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.table__table-row-alt {
+    border-bottom: 1px solid #C8C8C8;
+    background-color: #f7f7f7;
+}
+
+/* HEADER */
+.table-container__table th {
+    padding: .4rem .2rem;
+    color: #fff;
+    text-align: center;
+    background-color: #666;
+}
+
+/* ADDING PADDING TO THE CELLS */
+.table__table-row td {
+    padding: .55rem;
+}
+
+.table__table-row-alt td {
+    padding: .55rem;
+}
+
+/* PAGINATION */
+.pager a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.pager {
+    color: #84BA40;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.pager td {
+    padding: 1px 8px;
+}
+
+.FixedHeader {
+    position: absolute;
+    font-weight: bold;
+    width: 100%;
+}     

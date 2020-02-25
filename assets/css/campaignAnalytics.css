@@ -1,0 +1,199 @@
+﻿.campaign-analytics__back-container {
+    display: flex;
+}
+
+.campaign-analytics__back-link {
+    color: inherit;
+}
+
+.campaign-analytics__arrow-left {
+    width: 12px;
+}
+
+.campaign-analytics__back-text {
+    font-weight: 600;
+}
+
+.campaign-analytics__analytics-container {
+    display: grid;
+    grid-gap: 1rem;
+    margin-top: 2rem;
+}
+
+.campaign-analytics__card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CED4DA;
+    border-radius: 3px;
+    padding: 1rem;
+    -webkit-box-shadow: 0px 0px 20px 9px #d0d2d691;
+    -moz-box-shadow: 0px 0px 20px 9px #d0d2d691;
+    box-shadow: 0px 0px 20px 9px #d0d2d691;
+}
+
+/* GRAPH CONTAINER */
+.campaign-analytics__graph-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CED4DA;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 20px 9px #d0d2d691;
+    -moz-box-shadow: 0px 0px 20px 9px #d0d2d691;
+    box-shadow: 0px 0px 20px 9px #d0d2d691;
+}
+
+.campaign-analytics__graph-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+}
+
+.campaign-analytics__graph-header-text {
+    /*margin-left: 1rem;*/
+}
+
+/* TOOLTIP */
+
+.campaign-analytics__tooltip {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+}
+
+.campaign-analytics__tooltip-img {
+    cursor: pointer;
+}
+
+.campaign-analytics__tooltip-text {
+    visibility: hidden;
+}
+
+.campaign-analytics__tooltip-text {
+    min-width: 300px;
+    position: absolute;
+    top: -60px;
+    right: -20px;
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+}
+
+.campaign-analytics__tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 90%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+}
+
+.campaign-analytics__tooltip:hover .campaign-analytics__tooltip-text {
+    visibility: visible;
+}
+
+.campaign-analytics__graph {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bae8e8;
+}
+
+/*.campaign-analytics__summary-container {
+
+}*/
+
+/* CARD */
+.campaign-analytics__card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CED4DA;
+    border-radius: 3px;
+    padding: 2rem;
+    -webkit-box-shadow: 0px 0px 20px 9px #d0d2d691;
+    -moz-box-shadow: 0px 0px 20px 9px #d0d2d691;
+    box-shadow: 0px 0px 20px 9px #d0d2d691;
+}
+
+.campaign-analytics__statistics-card {
+    width: 100%;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(auto-fill, 50%);
+}
+
+.campaign-analytics__statistics-card :first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 / -1;
+}
+
+.statistics-card__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistics-card__header-text {
+    font-size: 21px;
+} 
+
+.statistics-card__statistics-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.statistics-card__section-header {
+    margin-bottom: .5rem;
+    font-size: 12px;
+}
+
+.statistics-card__section-data {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.campaign-analytics__recipients-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.campaign-analytics__show-recipients {
+    cursor: pointer;
+    text-decoration: underline dotted;
+}
+
+@media only screen and (min-width: 768px) {
+    .campaign-analytics__analytics-container {
+        width: 900px;
+        grid-auto-flow: column;
+        grid-template-rows: 140px 140px 1fr;
+    }
+
+    /* TOOLTIP */
+    .campaign-analytics__tooltip-text {
+        right: -140px;
+    }
+
+    .campaign-analytics__tooltip-text::after {
+        left: 50%;
+    }
+
+    .campaign-analytics__analytics-container :first-child {
+        grid-row: 1 / 3;
+    }
+
+    .campaign-analytics__graph {
+        height: 100%;
+    }
+
+    .campaign-analytics__statistics-card {
+        width: 288px;
+    }
+}
