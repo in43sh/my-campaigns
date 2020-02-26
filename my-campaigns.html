@@ -20,8 +20,9 @@
                 <div class="menu__left">
                     <li class="menu__link-container menu__logo-item">
                         <a class="menu__link-item" href="/dashboardhome.aspx">
-                            <asp:Image AlternateText="Company logo" CssClass="img-fluid"
-                                ImageUrl="assets/images/optin-rewards-powered-by-gtn.svg" runat="server" />
+                            <img class="img-fluid" src="assets/images/optin-rewards-powered-by-gtn.svg">
+                            <!-- <asp:Image AlternateText="Company logo" CssClass="img-fluid"
+                                ImageUrl="assets/images/optin-rewards-powered-by-gtn.svg" runat="server" /> -->
                         </a>
                     </li>
                 </div>
@@ -29,10 +30,13 @@
                     <li class="menu__link-container">
                         <asp:HyperLink id="hl_RegisterCustomer" CssClass="menu_link-item" NavigateUrl="addMember.aspx"
                             Text="Register Customer" runat="server" Visible="false" />
-                        <asp:HyperLink id="hl_redeem" CssClass="menu__link-item" NavigateUrl="redemptionhistory.aspx"
+                        <a class="menu__link-item" href="./redemptionhistory.aspx">
+                            <img class="img-fluid" src="./assets/images/redeem-icon.png" alt="Redeem coupon icon" />
+                        </a>
+                        <!-- <asp:HyperLink id="hl_redeem" CssClass="menu__link-item" NavigateUrl="redemptionhistory.aspx"
                             Text="" runat="server" Visible="true">
                             <img class="img-fluid" src="images/redeem-icon.png" alt="Redeem coupon icon" />
-                        </asp:HyperLink>
+                        </asp:HyperLink> -->
                     </li>
                     <li class="menu__link-container">
                         <a class="menu__link-item" href="createstore.aspx">My Account</a>
