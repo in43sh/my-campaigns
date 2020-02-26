@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Analytics</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/campaignAnalytics.css">
+</head>
+<body class="body">
+    <div class="colorbar"></div>
+    <!-- <form class="main-form" runat="server"> -->
+    <div class="body-internal-container">
+        <!-- MENU -->
+        <nav class="main-nav__menu">
+            <ul class="menu">
+                <div class="menu__left">
+                    <li class="menu__link-container menu__logo-item">
+                        <a class="menu__link-item" href="/dashboardhome.aspx">
+                            <asp:Image AlternateText="Company logo" CssClass="img-fluid"
+                                ImageUrl="assets/images/optin-rewards-powered-by-gtn.svg" runat="server" />
+                        </a>
+                    </li>
+                </div>
+                <div class="menu__right">
+                    <li class="menu__link-container">
+                        <asp:HyperLink id="hl_RegisterCustomer" CssClass="menu_link-item" NavigateUrl="addMember.aspx"
+                            Text="Register Customer" runat="server" Visible="false" />
+                        <asp:HyperLink id="hl_redeem" CssClass="menu__link-item" NavigateUrl="redemptionhistory.aspx"
+                            Text="" runat="server" Visible="true">
+                            <img class="img-fluid" src="images/redeem-icon.png" alt="Redeem coupon icon" />
+                        </asp:HyperLink>
+                    </li>
+                    <li class="menu__link-container">
+                        <a class="menu__link-item" href="createstore.aspx">My Account</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <main class="main">
+            <!-- SIDEBAR -->
+            <nav>
+                <ul class="sidebar">
+                    <div onclick="toggleMenu()" class="sidebar__toggler-item">
+                        <span>Menu</span>
+                        <div class="sidebar__toggler-div">
+                            <!-- <i class="fas fa-bars sidebar__menu-icon"></i> -->
+                            <img class="sidebar__menu-img" src="assets/images/hamburger.svg" alt="Menu toggle button" />
+                        </div>
+                    </div>
+                    <div class="sidebar-wrapper" id="sidebar-phone">
+                        <div class="sidebar__wrapper-inside">
+                            <a class="sidebar__link" href="dashboardhome.aspx">
+                                <li class="sidebar__link-item">
+                                    <span>Dashboard</span>
+                                </li>
+                            </a>
+                            <a class="sidebar__link" href="Transactions.aspx">
+                                <li class="sidebar__link-item">
+                                    <span>Transactions</span>
+                                </li>
+                            </a>
+                            <a class="sidebar__link" href="revenue.aspx">
+                                <li class="sidebar__link-item">
+                                    <span>Revenue</span>
+                                </li>
+                            </a>
+                            <a class="sidebar__link" href="revenue.aspx">
+                                <li class="sidebar__link-item">
+                                    <span>Revenue</span>
+                                </li>
+                            </a>
+                            <a class="sidebar__link" href="Review.aspx">
+                                <li class="sidebar__link-item">
+                                    <span>Reviews</span>
+                                </li>
+                            </a>
+                            <a class="sidebar__link" href="mapsNew.aspx">
+                                <li class="sidebar__link-item">
+                                    <span>Maps</span>
+                                </li>
+                            </a>
+                            <a class="sidebar__link" href="members.aspx">
+                                <li class="sidebar__link-item">
+                                    <span>Visitor Loyalty</span>
+                                </li>
+                            </a>
+                            <a class="sidebar__link" href="roi.aspx">
+                                <li class="sidebar__link-item">
+                                    <span>ROI</span>
+                                </li>
+                            </a>
+                            <a class="sidebar__link" href="addMember.aspx">
+                                <li class="sidebar__link-item">
+                                    <span>Customers</span>
+                                </li>
+                            </a>
+                            <a class="sidebar__link" href="AddMerchantGroup.aspx">
+                                <li class="sidebar__link-item">
+                                    <span>Groups</span>
+                                </li>
+                            </a>
+                            <a class="sidebar__link" href="newofferlist.aspx">
+                                <li class="sidebar__link-item">
+                                    <span>Offers</span>
+                                </li>
+                            </a>
+                            <a class="sidebar__link" href="mycampaigns.aspx">
+                                <li class="sidebar__link-item">
+                                    <span>Marketing</span>
+                                </li>
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+            <!-- MAIN -->
+            <div class="main-container">
+                <div class="main-container__page-header">
+                    <h5 class="page-header__page-title">
+                        <asp:label ID="lbl_Merch_Name" runat="server"></asp:label> - My Campaigns <sup
+                            style="font-size:small">(BETA)</sup>
+                    </h5>
+                    <asp:DropDownList ID="theList" CssClass="page-header__select" runat="server"
+                        OnSelectedIndexChanged="loadNewSelection" AutoPostBack="true">
+                    </asp:DropDownList>
+                </div>
+                <div class="main-container__content-container">
+                    <div class="main-container__table-container">
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <asp:HyperLink id="hl_signout" CssClass="footer-signout-link" NavigateUrl="loginnew.aspx" Text="Sign out"
+            runat="server" Visible="true" />
+    </footer>
+    <!-- </form> -->
+
+</body>
+
+</html>
