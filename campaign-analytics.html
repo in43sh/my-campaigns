@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/campaignAnalytics.css">
 </head>
+
 <body class="body">
     <div class="colorbar"></div>
     <!-- <form class="main-form" runat="server"> -->
@@ -17,8 +19,9 @@
                 <div class="menu__left">
                     <li class="menu__link-container menu__logo-item">
                         <a class="menu__link-item" href="/dashboardhome.aspx">
-                            <asp:Image AlternateText="Company logo" CssClass="img-fluid"
-                                ImageUrl="assets/images/optin-rewards-powered-by-gtn.svg" runat="server" />
+                            <img class="img-fluid" src="assets/images/optin-rewards-powered-by-gtn.svg">
+                            <!-- <asp:Image AlternateText="Company logo" CssClass="img-fluid"
+                                ImageUrl="assets/images/optin-rewards-powered-by-gtn.svg" runat="server" /> -->
                         </a>
                     </li>
                 </div>
@@ -26,10 +29,13 @@
                     <li class="menu__link-container">
                         <asp:HyperLink id="hl_RegisterCustomer" CssClass="menu_link-item" NavigateUrl="addMember.aspx"
                             Text="Register Customer" runat="server" Visible="false" />
-                        <asp:HyperLink id="hl_redeem" CssClass="menu__link-item" NavigateUrl="redemptionhistory.aspx"
+                        <a class="menu__link-item" href="./redemptionhistory.aspx">
+                            <img class="img-fluid" src="./assets/images/redeem-icon.png" alt="Redeem coupon icon" />
+                        </a>
+                        <!-- <asp:HyperLink id="hl_redeem" CssClass="menu__link-item" NavigateUrl="redemptionhistory.aspx"
                             Text="" runat="server" Visible="true">
                             <img class="img-fluid" src="images/redeem-icon.png" alt="Redeem coupon icon" />
-                        </asp:HyperLink>
+                        </asp:HyperLink> -->
                     </li>
                     <li class="menu__link-container">
                         <a class="menu__link-item" href="createstore.aspx">My Account</a>
@@ -134,11 +140,21 @@
         </main>
     </div>
     <footer class="footer">
+        <a class="footer-signout-link" href="./loginnew.aspx">Sign out</a>
         <asp:HyperLink id="hl_signout" CssClass="footer-signout-link" NavigateUrl="loginnew.aspx" Text="Sign out"
             runat="server" Visible="true" />
     </footer>
     <!-- </form> -->
 
 </body>
-
+<script>
+    function toggleMenu() {
+        let sidebar_menu = document.getElementById("sidebar-phone");
+        if (sidebar_menu.style.display === "block") {
+            sidebar_menu.style.display = "none";
+        } else {
+            sidebar_menu.style.display = "block";
+        }
+    }
+</script>
 </html>
