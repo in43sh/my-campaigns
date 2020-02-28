@@ -10,7 +10,17 @@
     width: 12px;
 }
 
+.campaign-analytics__back {
+    display: flex;
+    align-items: center;
+}
+
 .campaign-analytics__back-text {
+    font-weight: 600;
+}
+
+.campaign-analytics__back-arrow {
+    padding-bottom: 6px;
     font-weight: 600;
 }
 

@@ -133,7 +133,123 @@
                 </div>
                 <div class="main-container__content-container">
                     <div class="main-container__table-container">
-                        
+                        <div class="campaign-analytics__back-container">
+                            <a href="./my-campaigns.html" class="campaign-analytics__back-link">
+                                <!-- <img src="assets/images/arrow_left.svg" alt="arrow to the left" class="campaign-analytics__arrow-left"/> -->
+                                <div class="campaign-analytics__back">
+                                    <span class="campaign-analytics__back-arrow">←</span><span class="campaign-analytics__back-text"> Back</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="campaign-analytics__analytics-container">
+                            <div class="campaign-analytics__graph-container">
+                                <div class="campaign-analytics__graph-header">
+                                    <span class="statistics-card__header-text">Graph</span>
+                                    <div class="campaign-analytics__tooltip">
+                                        <img class="campaign-analytics__tooltip-img" src="assets/images/tooltip.svg" />
+                                        <span class="campaign-analytics__tooltip-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                    </div>
+                                </div>
+                                <div class="campaign-analytics__graph">
+
+                                </div>
+                            </div>
+
+                            <div class="campaign-analytics__card campaign-analytics__summary-container">
+                                <div class="statistics-card__header">
+                                    <span class="statistics-card__header-text">Summary</span>
+                                    <div class="campaign-analytics__tooltip">
+                                        <img class="campaign-analytics__tooltip-img" src="assets/images/tooltip.svg" />
+                                        <span class="campaign-analytics__tooltip-text">Shows how many messages were sent and how many failed to send.</span>
+                                    </div>
+                                </div>
+                                <div class="mt-md">
+                                    <span class="bold">Name:</span>
+                                    <asp:Label ID="Label9" runat="server" Text="Name of the Campaign"></asp:Label>
+                                </div>
+                                <div>
+                                    <span class="bold">Number of uses:</span>
+                                    <asp:Label ID="Label10" runat="server" Text="1234"></asp:Label>
+                                </div>
+                                <div>
+                                    <span class="bold">Status:</span>
+                                    <asp:Label ID="Label11" runat="server" Text="Sent out"></asp:Label>
+                                </div>
+                                <div>
+                                    <span class="bold">Total revenue:</span>
+                                    <asp:Label ID="Label12" runat="server" Text="$123"></asp:Label>
+                                </div>
+                                <div>
+                                    <span class="bold">Message:</span>
+                                    <asp:Label ID="Label13" runat="server" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></asp:Label>
+                                </div>
+                            </div>
+                            <div class="campaign-analytics__card campaign-analytics__statistics-card">
+                                <div class="statistics-card__header">
+                                    <span class="statistics-card__header-text">Reach</span>
+                                    <div class="campaign-analytics__tooltip">
+                                        <img class="campaign-analytics__tooltip-img" src="assets/images/tooltip.svg" />
+                                        <span class="campaign-analytics__tooltip-text">Shows how many messages were sent and how many failed to send.</span>
+                                    </div>
+                                </div>
+                                <div class="statistics-card__statistics-section">
+                                    <span class="statistics-card__section-header">Messages Sent</span>
+                                    <asp:Label ID="Label1" CssClass="statistics-card__section-data" runat="server" Text="5,653"></asp:Label>
+                                </div>
+                                <div class="statistics-card__statistics-section">
+                                    <span class="statistics-card__section-header">Failed Sends</span>
+                                    <asp:Label ID="Label2" CssClass="statistics-card__section-data" runat="server" Text="16"></asp:Label>
+                                </div>
+                            </div>
+
+                            <div class="campaign-analytics__card campaign-analytics__statistics-card">
+                                <div class="statistics-card__header">
+                                    <span class="statistics-card__header-text">Response</span>
+                                    <div class="campaign-analytics__tooltip">
+                                        <img class="campaign-analytics__tooltip-img" src="assets/images/tooltip.svg" />
+                                        <span class="campaign-analytics__tooltip-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                    </div>
+                                </div>
+                                <div class="statistics-card__statistics-section">
+                                    <span class="statistics-card__section-header">Opt-Outs</span>
+                                    <asp:Label ID="Label3" CssClass="statistics-card__section-data" runat="server" Text="13"></asp:Label>
+                                </div>
+                                <div class="statistics-card__statistics-section">
+                                    <span class="statistics-card__section-header">Offers Used</span>
+                                    <asp:Label ID="Label4" CssClass="statistics-card__section-data" runat="server" Text="114"></asp:Label>
+                                </div>
+                            </div>
+
+                            <div class="campaign-analytics__card campaign-analytics__statistics-card">
+                                <div class="statistics-card__header">
+                                    <span class="statistics-card__header-text">Return on Investment</span>
+                                    <div class="campaign-analytics__tooltip">
+                                        <img class="campaign-analytics__tooltip-img" src="assets/images/tooltip.svg" />
+                                        <span class="campaign-analytics__tooltip-text">Shows how many messages were sent and how many failed to send.</span>
+                                    </div>
+                                </div>
+                                <div class="statistics-card__statistics-section">
+                                    <span class="statistics-card__section-header">Campaign Cost</span>
+                                    <asp:Label ID="Label5" CssClass="statistics-card__section-data" runat="server" Text="-$19.59"></asp:Label>
+                                </div>
+                                <div class="statistics-card__statistics-section">
+                                    <span class="statistics-card__section-header">Gross Revenue</span>
+                                    <asp:Label ID="Label6" CssClass="statistics-card__section-data" runat="server" Text="$1,492"></asp:Label>
+                                </div>
+                                <div class="statistics-card__statistics-section">
+                                    <span class="statistics-card__section-header">Discounts</span>
+                                    <asp:Label ID="Label7" CssClass="statistics-card__section-data" runat="server" Text="-$242"></asp:Label>
+                                </div>
+                                <div class="statistics-card__statistics-section">
+                                    <span class="statistics-card__section-header">New Revenue</span>
+                                    <asp:Label ID="Label8" CssClass="statistics-card__section-data" runat="server" Text="$1,230.41"></asp:Label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="campaign-analytics__recipients-container">
+                            <p class="campaign-analytics__show-recipients mt-lg mb-md" onclick="toggleRecipientsList()">Show recipients</p>
+                            <img id="campaign-analytics__recipients-list-item" style="width:100%;" src="https://i.ibb.co/khYsvYs/1.png" alt="just some random picture" border="0">
+                        </div> -->
                     </div>
                 </div>
             </div>
