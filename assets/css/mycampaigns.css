@@ -1,4 +1,10 @@
-﻿.my-campaigns__instructions-wrapper {
+﻿.my-campaigns-table__options-cell {
+    /* display: flex;
+    justify-content: center; */
+}
+
+/* OLD */
+.my-campaigns__instructions-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
