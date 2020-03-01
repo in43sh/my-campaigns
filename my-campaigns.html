@@ -135,7 +135,6 @@
                 <div class="main-container__content-container">
                     <div class="main-container__table-container">
                         <div style="overflow-y:scroll; height:450px;">
-
                             <div>
                                 <table class="table-container__table" cellspacing="0" rules="rows" style="border-collapse:collapse;">
                                     <tr>
@@ -156,8 +155,8 @@
                                         <td>$1,230.41</td>
                                         <td>
                                             <div class="my-campaigns-table__options-container">
-                                                <img class="cursor-pointer" src="./assets/images/options-btn.svg"/>
-                                                <div class="my-campaigns-table__options-menu-container rounded cursor-pointer">
+                                                <img onclick="toggleTableMenuOptions()" class="cursor-pointer" src="./assets/images/options-btn.svg"/>
+                                                <div id="options-menu-container" class="my-campaigns-table__options-menu-container rounded cursor-pointer">
                                                     <a href="./campaign-analytics.html">
                                                         <p>Details</p>
                                                     </a>
@@ -280,6 +279,15 @@
             sidebar_menu.style.display = "none";
         } else {
             sidebar_menu.style.display = "block";
+        }
+    }
+
+    function toggleTableMenuOptions() {
+        let options_menu = document.getElementById("options-menu-container");
+        if (options_menu.style.display === "block") {
+            options_menu.style.display = "none";
+        } else {
+            options_menu.style.display = "block";
         }
     }
 </script>
