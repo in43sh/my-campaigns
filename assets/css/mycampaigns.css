@@ -8,10 +8,25 @@
 .my-campaigns-table__options-menu-container {
     position: absolute;
     bottom: 16px;
-    padding: 8px;
     background-color: #fff;
     border-radius: 5px;
     display: none;
+}
+
+.my-campaigns-table__options-menu-container:active {
+    background-color: rgb(233, 233, 233);
+}
+
+.my-campaigns-table__options-menu-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    color: #000;
+}
+
+.my-campaigns-table__options-menu-link:focus, .my-campaigns-table__options-menu-link:hover, .my-campaigns-table__options-menu-link > p {
+    color: #000;
 }
 
 /* OLD */
