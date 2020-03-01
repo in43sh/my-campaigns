@@ -1,7 +1,17 @@
 ﻿.my-campaigns-table__options-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.my-campaigns-table__options-menu-container {
+    position: absolute;
+    bottom: 16px;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 5px;
+    /* display: none; */
 }
 
 /* OLD */
