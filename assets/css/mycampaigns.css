@@ -1,7 +1,8 @@
-﻿/* .my-campaigns-table__options-cell {
+﻿.my-campaigns-table__options-container {
     display: flex;
     justify-content: center;
-} */
+    align-items: center;
+}
 
 /* OLD */
 .my-campaigns__instructions-wrapper {
